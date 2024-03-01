@@ -1,0 +1,11 @@
+body{
+
+    background-color: #000;
+}
+
+.Canvas {
+
+    position:absolute;
+    border: 1px solid #c90;
+    background-color: #000;
+}
