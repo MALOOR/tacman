@@ -10,7 +10,7 @@ let loop = {
         loop.play();
 
         if(registroTemporal - loop.ultimoRegistro > 999){
-
+            loop.ultimoRegistro = registroTemporal;
             console.log(loop.fps);
             loop.aps = 0;
             loop.fps = 0;
