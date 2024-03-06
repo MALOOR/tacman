@@ -26,6 +26,13 @@ let loop = {
 
     loop.fps++;
     borrarCanvas();
+
+    ctx.beginPath();
+    ctx.font = "12px verdana";
+    ctx.fillStyle = "blue";
+    ctx.fillText(Timer.now,15,20);
+    ctx.stroke();
+
    }
 
 }
@@ -51,6 +58,8 @@ function resizeWindow(){
     canvas.style.width = canvasWidth + "px";
     canvas.style.height = canvasHeigth + "px";
 }; 
+
+Concurrent.Thread.create(InitTimer);
 
 window.addEventListener("load", function(e){
 
