@@ -23,7 +23,8 @@ class Time {
 
 };
 
-let Timer = {
+
+var Timer = {
 
     now:  "",
     day: 0,
@@ -34,6 +35,7 @@ let Timer = {
     seconds: 0,
     miliSeconds: 0      
 };
+
 
 function InitTimer(){
 
@@ -49,7 +51,24 @@ function InitTimer(){
         Timer.year = Timer.now.getFullYear();
 
     }
-}
+};
+
+const typeCrono = {
+
+    Forward:0,
+    Backward:1
+};
+
+
+class Crono{
+
+    constructor(id, type){
+        this.id =id;
+        this.emp; //fecha inicial ()
+
+    };
+};
+
 
 
 
