@@ -32,6 +32,8 @@ var loop = {
     ctx.font = "12px verdana";
     ctx.fillStyle = "blue";
     ctx.fillText(Timer.now, 15,20);
+    ctx.fillText(Timer.hours, 15,40);
+    ctx.fillText(Timer.miliSeconds, 15,60)
     ctx.stroke();
 
    }
